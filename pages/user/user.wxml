@@ -1,0 +1,8 @@
+<!--uer.wxml-->
+<view class="user-container">
+  <block>
+    <text class="user-title">个人中心</text>
+    <button class="user-btn" bindtap="clickMe" size="mini">去首页</button>
+    <map longitude="113.333744" latitude="23.132462"></map>
+  </block>
+</view>

@@ -1,0 +1,10 @@
+.user-container{
+  display: flex;
+  flex-direction: column;
+  text-align:  center;
+  padding: 0 20rpx;
+  }
+  .user-btn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
