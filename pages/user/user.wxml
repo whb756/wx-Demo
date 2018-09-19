@@ -1,8 +1,19 @@
 <!--uer.wxml-->
 <view class="user-container">
-  <block>
-    <text class="user-title">个人中心</text>
-    <button class="user-btn" bindtap="clickMe" size="mini">去首页</button>
-    <map longitude="113.333744" latitude="23.132462"></map>
-  </block>
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="info_list">
+    <block wx:for="{{userListInfo}}">
+        <view class="weui_cell">
+            <view class="weui_cell_hd"><image src="{{item.icon}}"></image></view>
+            <view class="weui_cell_bd">
+                <view class="weui_cell_bd_p"> {{item.text}} </view>
+            </view>
+            <view wx:if="{{item.isunread}}" class="badge">{{item.unreadNum}}</view>
+            <view class="with_arrow"></view>
+        </view>
+    </block>
+  </view>
 </view>

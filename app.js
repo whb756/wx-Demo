@@ -1,6 +1,6 @@
 //app.js
 App({
-  //  小程序启动之后触发
+  //  小程序初始化后触发
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
@@ -33,6 +33,18 @@ App({
         }
       }
     })
+  },
+  onShow: function (options) {
+    // 小程序显示触发
+   console.log("wechat show")
+  },
+  onHide: function () {
+    // 小程序隐藏时触发
+    console.log("wechat hide")
+  },
+  onError: function (msg) {
+    //  小程序发生错误触发
+    console.log(msg)
   },
   globalData: {
     userInfo: null

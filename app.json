@@ -5,10 +5,12 @@
     "pages/user/user"
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#292929",
+    "backgroundColor": "#F2f2f2",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":true
   },
   "tabBar": {
     "color": "#fff",
